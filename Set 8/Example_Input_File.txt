@@ -1,0 +1,5 @@
+Timmy Right 100.0
+Bobby Left 92.1
+Ricky Right 78.5
+Billy Right 94.2
+Clyde Left 81.0

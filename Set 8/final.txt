@@ -1,0 +1,63 @@
+Title:
+    Jarod Spencer
+    Section B (9am)
+    Pulling Calculator
+
+Problem Description:
+       This program determines the optimal velocity and angle of a disc when
+    it leaves a puller’s hand so that it travels a certain distance given the
+    current day's wind data, including the wind speed, directional angle, and
+    angle of inclination. A user will enter the input file, current wind speed
+    the left/right wind direction, and the angle of inclination of the wind.
+    The left- or right-handedness of a player and the distance they want it
+    to travel will be taken in from a file containing a list of players and
+    these quantities specific to each player. The program then performs the
+    calculations for each player and write the results to an output file.
+    (Note: pulling is the term used to describe a “kickoff” in an Ultimate
+    Frisbee game. The puller throws the disc to the opposing team just like a
+    kickoff in football.)
+
+Program Documentation:
+       First, the user will enter the name of their txt file, including the .txt
+    file type. Next they will enter the current day's wind data, all double values,
+    first the speed, then the directional angle, then the angle of inclination.
+    The directional wind angle is measured as an angle from -180 to 180 degrees
+    with 0 being directly away from the players. The wind inclination angle is
+    measured as an angle from 0 to 89 degrees with respect to the plane of the ground.
+    Lastly, the user will enter the name they desire for the output file.
+       If another programmer were to extend this program, I would suggest that they
+    incorporate a player's strength as well into the calculations. Specifically,
+    a function, or set of functions, that would determine the maximum velocity that
+    a player could throw the disc at given their arm strength and whether or not
+    they could actually pull the disc their desired distance. Additionally, a
+    programmer could write more complicated, but more accurate, velocity, disc angle,
+    and launch angle calculation functions.
+
+Tests:
+    - Program was tested with "normal" values for wind data (speed < 20, angle between
+        -180 and +180, and inclination between -10 and 10). Program operated perfectly
+        every time.
+    - Edge case: while in real life, the angle of inclination of the wind at the Earth's
+        surface will rarely be less than -10 or greater than +10, program was tested
+        with a wind inclination angle of 89 degrees (90 is not physically possible).
+        Program operated perfectly.
+    - Edge case: tested for the possibility that a user could enter an angle that is
+        greater than 180 or less than -180, such as 360. Program converted angle to be
+        within desired range and ran wonderfully.
+    - Edge case: as an Ultimate Frisbee field is only 120 yards long, a real-life puller
+        will never desire to pull the disc farther than this. However, program was
+        tested with the case of 200 yards and operated flawlessly.
+    - Also tested program with an invalid input file. Program accurately reported an
+        error in the file and exited program.
+
+Reflections:
+       In writing this program, I learned several things. First, I should more clearly
+    plan out how my functions will relate to each other and what I will need to call in
+    main before I begin coding. Not doing these two things well enough beforehand made
+    the entire process take quite a bit longer than it should have. I also learned how
+    helpful classes are. Prior to this project, I believed I could get by by always
+    passing in the necessary variables to a given function. Using classes relieves you
+    of having to pass variable quite as often due to classes having those variables as
+    private data members. I actually quite enjoyed making this program. While the algebra
+    of the data calculations was simple enough, putting it all together and debugging
+    the program was quite challenging but also entertaining.

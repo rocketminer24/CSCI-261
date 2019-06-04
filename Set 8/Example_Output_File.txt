@@ -1,0 +1,9 @@
+All players should launch the discs at an angle of 5.0 degrees.
+
+All players should angle the discs at 0.0 degrees.
+
+Timmy should throw the disc at 77.394977 mph.
+Bobby should throw the disc at 74.234676 mph.
+Ricky should throw the disc at 68.458127 mph.
+Billy should throw the disc at 75.087566 mph.
+Clyde should throw the disc at 69.555480 mph.
